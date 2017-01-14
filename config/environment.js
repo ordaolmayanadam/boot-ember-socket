@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'workspace-client',
+    modulePrefix: 'ember-websocket-client',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

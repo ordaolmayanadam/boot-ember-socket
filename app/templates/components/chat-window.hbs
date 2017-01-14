@@ -23,8 +23,8 @@
       </div>
       <div class="panel-body">
           {{#each client.messages as |message|}}
-            <div class="col-xs-4">{{message.user}}</div>
-            <div class="col-xs-8">{{message.content}}</div>
+            <div class="col-xs-3 chat-user">{{message.user}}</div>
+            <div class="col-xs-9">{{message.content}}</div>
           {{/each}}
       </div>
       <div class="panel-footer">
