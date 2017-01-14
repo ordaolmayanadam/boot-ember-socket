@@ -1,12 +1,15 @@
 # Workspace-client
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Sample chat client for a Spring Boot websocket backend. You need to use this application with [Spring Boot WebSocket Server](https://github.com/ordaolmayanadam/spring-boot-websocket-server)
+
+
+For the starting point take a look et spring.io example:  
+[Spring.io Websocket Example](https://spring.io/guides/gs/messaging-stomp-websocket/)
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
-
+[
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
