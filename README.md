@@ -1,4 +1,4 @@
-# Workspace-client
+# Ember Websocket Chat Client with SockJS and Stomp
 
 Sample chat client for a Spring Boot websocket backend. You need to use this application with [Spring Boot WebSocket Server](https://github.com/ordaolmayanadam/spring-boot-websocket-server)
 
