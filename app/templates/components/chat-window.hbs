@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        Spring Boot && EmberJS WebSocket Example
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <form class="form-inline">
+          <div class="form-group">
+            {{input placeholder="Any username" class="form-control"  value=client.username  disabled=(if client.connected true null)}}
+          </div>
+          <button class="btn btn-default" type="submit" {{action 'connect'}} disabled={{if client.connected true null}}>Connect</button>
+          <button class="btn btn-default" type="submit" {{action 'disconnect'}} disabled={{if client.connected null true}}>Disconnect</button>
+        </form>
+        <span>{{client.feedback}}</span>
+      </div>
+      <div class="panel-body">
+          {{#each client.messages as |message|}}
+            <div class="col-xs-4">{{message.user}}</div>
+            <div class="col-xs-8">{{message.content}}</div>
+          {{/each}}
+      </div>
+      <div class="panel-footer">
+        <form class="form-inline">
+          <div class="form-group">
+            {{input placeholder=(if client.connected "Say something" "Please connect!") class="form-control"  value=message  disabled=(if client.connected null true)}}
+          </div>
+          <button  class="btn btn-default" {{action 'sendMessage' message}}  disabled={{if client.connected null true}}> Send </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
